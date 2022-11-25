@@ -1,14 +1,4 @@
-import mysql.connector
+from classes.menu import *
 
-mydb = mysql.connector.connect(
-  host="localhost",
-  user="root",
-  password="",
-  database="farmaciamaromba"
-)
-mycursor = mydb.cursor()
-mycursor.execute("SELECT * FROM funcionario")
-myresult = mycursor.fetchall()
-for x in myresult:
-  print(x)
-
+if __name__ == '__main__':
+    main()
